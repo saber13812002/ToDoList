@@ -11,10 +11,12 @@ public class TimeRecord {
 
     private String time;
     private String note;
+    private boolean deleted;
 
-    public TimeRecord(String time, String note) {
+    public TimeRecord(String time, String note,boolean deleted) {
         this.time = time;
         this.note = note;
+        this.deleted = deleted;
     }
 
     public String getTime() {
@@ -31,5 +33,13 @@ public class TimeRecord {
 
     public void setNote(String note) {
         this.note = note;
+    }
+
+    public boolean getDeleted() {
+        return deleted;
+    }
+
+    public void setDeleted(boolean deleted) {
+        this.deleted = deleted;
     }
 }
